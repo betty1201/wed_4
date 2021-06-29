@@ -1,0 +1,111 @@
+/*index*/
+@include ipad{
+    .banner{
+        height: auto;
+        padding: 10% 0px;
+    }
+    .introduction-title{
+        @include pushBox(60px,80px);
+        input{
+            width: 100%;
+        }
+    }
+    .sales-card .sales-img img{
+        width: 350px;
+        height: 400px;
+    }
+    .singleCard{
+        .singleCard-img{
+            max-width: 55%;
+        }
+        .singleCard-title{
+            max-width: 45%;
+        }
+    }
+    .subscription{
+        @include pushBox(312px,0px);
+        .subscription-box{
+            margin: 0 auto;
+        }
+    }
+}
+
+@include phone{
+    .navigation .rwdHam{
+        display: flex;
+        .ham{
+            font-size: 26px;
+            margin-left: 32px;
+        }
+        .cart{
+            position: relative;
+            .cart span{
+                display: block;
+                width: 16px;
+                height: 13px;
+                background: red;
+                color: $white;
+                border-radius: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+    .navigation .navigation-list{
+        display: none;
+    }
+
+    .banner-box{
+        h2{@include txt($fz32,$lh48);}
+        p{@include txt($fz20,$lh30);}
+    }
+    .card{
+        display: block;
+        .card-img,.card-title{
+            width: 100%;
+            img{width: 100%;} /*為了Five O’clock Au Gingembre(第二張)的照片,它不夠大...*/
+        }
+    }
+    .introduction{
+        display: block;
+        .introduction-img{
+            width: 100%;
+            height: 680px;
+        }
+        .introduction-title{
+            width: 100%;
+            @include pushBox(0px,0px);
+        }
+    }
+
+    .sales-contain{
+        display: block;
+        .sales-card{
+            margin-bottom: 32px;
+            .sales-img{
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: 350px;
+                }
+            }
+        }
+    }
+    .singleCard{
+        display: block;
+        .singleCard-img{
+            max-width: 100%;
+        }
+        .singleCard-title{
+            max-width: 100%;
+            padding-left: 0px;
+        }
+    }
+    footer{
+        padding: 28px 0px;
+            .contact-list{
+                display: none;
+            }
+    }
+}

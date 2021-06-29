@@ -1,0 +1,498 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.logo {
+  background: url("../img/d’Perfume.png") no-repeat;
+  display: block;
+  width: 128px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.mr36 {
+  margin-right: 36px;
+}
+
+.mr30 {
+  margin-right: 30px;
+}
+
+.mr28 {
+  margin-right: 28px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.mr6 {
+  margin-right: 6px;
+}
+
+.mb8 {
+  margin-bottom: 8px;
+}
+
+.mb16 {
+  margin-bottom: 16px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mb52 {
+  margin-bottom: 52px;
+}
+
+.mb60 {
+  margin-bottom: 60px;
+}
+
+.db {
+  display: block;
+}
+
+.df {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.jcsb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aic {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.contain {
+  max-width: 1020px;
+  padding: 0px 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.banner-box h2, .card-title h2, .introduction-title h3, .sales-title h2, .singleCard-title h2, .subscription-box p {
+  font-weight: bold;
+}
+
+.navigation {
+  padding-top: 9px;
+}
+
+.navigation .rwdHam {
+  display: none;
+}
+
+.navigation a {
+  display: block;
+  color: #8D8D8D;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 7px 0px;
+}
+
+.banner {
+  background: url("../img/index1.jpg") no-repeat;
+  background-size: cover;
+  height: calc(100vh - 47px);
+  color: #fff;
+  padding-top: 20%;
+  padding-left: 30%;
+}
+
+.banner .banner-box {
+  max-width: 400px;
+}
+
+.banner .banner-box h2 {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.banner .banner-box p {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.banner .banner-box input {
+  border: 2px solid #fff;
+  border-radius: 30px;
+  width: 350px;
+  height: 60px;
+  color: #fff;
+  font-size: 24px;
+  background: transparent;
+}
+
+.card-title {
+  width: 50%;
+  padding: 20px;
+}
+
+.card-title h2 {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.card-title p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.card-title a {
+  color: #AC8A46;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card-img {
+  width: 50%;
+}
+
+.introduction-title {
+  width: 50%;
+  padding-top: 90px;
+  padding-left: 110px;
+}
+
+.introduction-title h3 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.introduction-title p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.introduction-title input {
+  border: 2px solid #000;
+  border-radius: 30px;
+  width: 350px;
+  height: 60px;
+  color: #000;
+  font-size: 24px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.introduction-img {
+  width: 50%;
+  background: url("../img/index5.jpg") no-repeat;
+  background-size: cover;
+  background-position: right center;
+}
+
+.sales {
+  background: #E0E0E0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.sales .sales-img {
+  max-width: 350px;
+}
+
+.sales .sales-img img {
+  height: 540px;
+}
+
+.sales .sales-title h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.sales .sales-title p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.sales .sales-title span {
+  text-decoration: line-through;
+  color: #8D8D8D;
+}
+
+.singleCard .singleCard-img {
+  max-width: 70%;
+}
+
+.singleCard .singleCard-title {
+  max-width: 30%;
+  right: 0px;
+  padding-left: 30px;
+}
+
+.singleCard .singleCard-title h2 {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.singleCard .singleCard-title h3 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.singleCard .singleCard-title p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.singleCard .singleCard-title a {
+  color: #AC8A46;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.subscription {
+  background: url("../img/index10.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 600px;
+  padding-top: 312px;
+  padding-left: 405px;
+}
+
+.subscription .subscription-box {
+  width: 350px;
+}
+
+.subscription .subscription-box p {
+  color: #8D8D8D;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.subscription .subscription-box .subscription-box-input input {
+  border: 2px solid #916000;
+  border-radius: 0px 4px 4px 0px;
+  width: 70%;
+  height: 60px;
+  text-align: center;
+}
+
+.subscription .subscription-box .subscription-box-input .input-but {
+  background: #916000;
+  color: #fff;
+  width: 30%;
+}
+
+footer {
+  background: #916000;
+}
+
+footer .footer-list {
+  color: #fff;
+}
+
+footer .footer-list .copyright span {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+footer .footer-list .contact-list li a {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 28px 0px;
+}
+
+/*index*/
+@media (max-width: 1199px) {
+  .banner {
+    height: auto;
+    padding: 10% 0px;
+  }
+  .introduction-title {
+    padding-top: 60px;
+    padding-left: 80px;
+  }
+  .introduction-title input {
+    width: 100%;
+  }
+  .sales-card .sales-img img {
+    width: 350px;
+    height: 400px;
+  }
+  .singleCard .singleCard-img {
+    max-width: 55%;
+  }
+  .singleCard .singleCard-title {
+    max-width: 45%;
+  }
+  .subscription {
+    padding-top: 312px;
+    padding-left: 0px;
+  }
+  .subscription .subscription-box {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .navigation .rwdHam {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navigation .rwdHam .ham {
+    font-size: 26px;
+    margin-left: 32px;
+  }
+  .navigation .rwdHam .cart {
+    position: relative;
+  }
+  .navigation .rwdHam .cart .cart span {
+    display: block;
+    width: 16px;
+    height: 13px;
+    background: red;
+    color: #fff;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .navigation .navigation-list {
+    display: none;
+  }
+  .banner-box h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .banner-box p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .card {
+    display: block;
+  }
+  .card .card-img, .card .card-title {
+    width: 100%;
+    /*為了Five O’clock Au Gingembre(第二張)的照片,它不夠大...*/
+  }
+  .card .card-img img, .card .card-title img {
+    width: 100%;
+  }
+  .introduction {
+    display: block;
+  }
+  .introduction .introduction-img {
+    width: 100%;
+    height: 680px;
+  }
+  .introduction .introduction-title {
+    width: 100%;
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+  .sales-contain {
+    display: block;
+  }
+  .sales-contain .sales-card {
+    margin-bottom: 32px;
+  }
+  .sales-contain .sales-card .sales-img {
+    width: 100%;
+  }
+  .sales-contain .sales-card .sales-img img {
+    width: 100%;
+    height: 350px;
+  }
+  .singleCard {
+    display: block;
+  }
+  .singleCard .singleCard-img {
+    max-width: 100%;
+  }
+  .singleCard .singleCard-title {
+    max-width: 100%;
+    padding-left: 0px;
+  }
+  footer {
+    padding: 28px 0px;
+  }
+  footer .contact-list {
+    display: none;
+  }
+}
+/*# sourceMappingURL=all.css.map */

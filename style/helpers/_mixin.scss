@@ -1,0 +1,61 @@
+.logo{
+    background: url("../img/d’Perfume.png") no-repeat;
+    display: block;
+    width: 128px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@mixin but($fontColor,$borderColor) {
+    border: 2px solid $borderColor;
+    border-radius: 30px;
+    width: 350px;
+    height: 60px;
+    color: $fontColor;
+    font-size: $fz24;
+}
+
+@mixin background-img($url){
+    background: url($url) no-repeat;
+    background-size: cover;
+}
+@mixin pushBox($top,$left) {
+    padding-top: $top;
+    padding-left: $left;
+}
+@mixin txt($fz,$lh){
+    font-size: $fz;
+    line-height: $lh;
+}
+@mixin a-ainColor{
+    color: $mainColor;
+    @include txt($fz16,$lh24);
+}
+@mixin navList-a($color,$ptb){
+    display: block;
+    color: $color;
+    @include txt($fz20,$lh30);
+    padding: $ptb 0px;
+}
+
+.mr36{margin-right: 36px;}
+.mr30{margin-right: 30px;}
+.mr28{margin-right: 28px;}
+.mr20{margin-right: 20px;}
+.mr6{margin-right: 6px;}
+
+.mb8{margin-bottom: 8px;}
+.mb16{margin-bottom: 16px;}
+.mb20{margin-bottom: 20px;}
+.mb52{margin-bottom: 52px;}
+.mb60{margin-bottom: 60px;}
+
+.db{display: block;}
+
+.df{display: flex;}
+.jcsb{justify-content: space-between;}
+.aic{align-items: center;}
+.row-reverse{
+    flex-direction: row-reverse;
+}

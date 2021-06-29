@@ -1,0 +1,154 @@
+.banner-box h2,.card-title h2,.introduction-title h3,.sales-title h2,.singleCard-title h2,.subscription-box p{
+    font-weight: bold;
+}
+
+.navigation{padding-top: 9px;}
+.navigation .rwdHam{
+    display: none;
+}
+.navigation a{
+    @include navList-a($assistWhite,16px-9px);
+}
+
+.banner{
+    @include background-img("../img/index1.jpg");
+    height: calc(100vh - 47px);
+    color: $white;
+    @include pushBox(20%,30%);
+    .banner-box{
+        max-width: 400px;
+        h2{
+            @include txt(40px,60px);
+        }
+        p{
+            @include txt($fz24,$lh36);
+        }
+        input{
+            @include but($white,$white);
+            background: transparent;
+        }
+
+    }
+}
+
+.card-title{
+    width: 50%;
+    padding: 20px;
+    h2{
+        @include txt($fz32,$lh48);
+    }
+    p{
+        @include txt($fz20,$lh30);
+    }
+    a{
+        @include a-ainColor;
+    }
+}
+.card-img{
+    width: 50%;
+}
+
+
+.introduction-title{
+    width: 50%;
+    @include pushBox(90px,110px);
+    h3{
+        @include txt($fz24,$lh36);
+    }
+    p{
+        @include txt($fz16,$lh24);
+    }
+    input{
+        @include but(#000,#000);
+        @include txt($fz20,$lh30);
+    }
+}
+.introduction-img{
+    width: 50%;
+    @include background-img("../img/index5.jpg");
+    background-position: right center;
+}
+
+.sales{
+    background: #E0E0E0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .sales-img{
+        max-width: 350px;
+        img{
+            height: 540px;
+        }
+    }
+    .sales-title{
+        h2{
+            @include txt($fz24,$lh36);
+        }
+        p{
+            @include txt($fz16,$lh24);
+        }
+        span{
+            text-decoration: line-through;
+            color: $assistWhite;
+        }
+    }
+}
+
+
+.singleCard{
+    .singleCard-img{
+        max-width: 70%;
+    }
+    .singleCard-title{
+        max-width: 30%;
+        right: 0px;
+        padding-left: 30px;
+        h2{@include txt($fz32,$lh48);}
+        h3{@include txt($fz20,$lh30);}
+        p{@include txt($fz16,$lh24);}
+        a{@include a-ainColor;}
+    }
+}
+
+.subscription{
+    @include background-img("../img/index10.jpg");
+    background-position: center center;
+    width: 100%;
+    height: 600px;
+    @include pushBox(312px,405px);
+    .subscription-box{
+        width: 350px;
+        p{
+            color: $assistWhite;
+            @include txt($fz32,$lh48);
+        }
+        .subscription-box-input{
+            input{
+                border: 2px solid $assistColor;
+                border-radius: 0px 4px 4px 0px;
+                width: 70%;
+                height: 60px;
+                text-align: center;
+            }
+            .input-but{
+                background: $assistColor;
+                color: $white;
+                width: 30%;
+            }
+        }
+    }
+}
+
+footer{
+    background: $assistColor;
+    .footer-list{
+        color: $white;
+        .copyright{
+            span{
+                @include txt($fz14,$lh21);
+            }
+        }
+        .contact-list li{
+            a{@include navList-a($white,28px);}
+        }
+    }
+}
