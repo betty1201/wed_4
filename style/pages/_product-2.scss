@@ -1,0 +1,50 @@
+.p2-navigation{
+    padding-top: 9px;
+    background: $assistColor;
+}
+.p2-navigation-list{
+    a{
+        @include navList-a($white,14px);
+    }
+}
+
+/*card*/
+.card{
+    .card-sellnum{
+        height: 50px;
+        .card-sellnum-num{
+            height: inherit;
+            width: 160px;
+            border: 1px solid #916000;
+            border-radius: 4px 0px 0px 4px;
+            padding: 16px;
+        }
+        .card-sellnum-sell{
+            background: $assistColor;
+            color: $white;
+            border: 2px solid #916000;
+            border-radius: 0px 4px 4px 0px;
+            width: 190px;
+            height: inherit;
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+    .favorites i{
+        color: $assistColor;
+    }
+}
+.card-note{
+    h3{
+        @include txt($fz16,$lh24);
+        font-weight: bold;
+    }
+}
+
+.card-img-50{
+    max-width: 47%;
+}
+
+.card-rwd{
+    display: none;
+}
