@@ -110,15 +110,3 @@
     }
 }
 
-/*product-2*/
-@include phone{
-    .card{
-        display: block;
-    }
-    .card-img{
-        display: none;
-    }
-    .card-rwd{
-        display: block;
-    }
-}

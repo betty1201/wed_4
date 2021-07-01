@@ -44,7 +44,27 @@
 .card-img-50{
     max-width: 47%;
 }
-
 .card-rwd{
     display: none;
+}
+
+/*RWD*/
+@include phone{
+    .card{
+        display: block;
+    }
+    .card-img-rwd-top40{
+        margin-top: 40px;
+    }
+    .card-img-rwd{
+        display: none;
+    }
+    .card-rwd{
+        display: block;
+        max-width: 100%;
+    }
+    .p2-navigation{
+        display: none;
+    }
+
 }
